@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="453.0" style="-fx-background-color: #bfc882;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <top>
+      <Label contentDisplay="CENTER" prefHeight="59.0" prefWidth="189.0" text="Add Employee" textFill="#31572c" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <graphic>
+            <AnchorPane prefHeight="68.0" prefWidth="200.0" />
+         </graphic>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="18.0" text="First Name:" textFill="#31572c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_firstName" layoutX="86.0" layoutY="14.0" prefHeight="25.0" prefWidth="108.0" promptText="first name" />
+            <Button fx:id="btn_finish" layoutX="392.0" layoutY="236.0" mnemonicParsing="false" onAction="#action_finish" style="-fx-background-color: #90A955;" text="Finish" textFill="#31572c" />
+            <Label layoutX="14.0" layoutY="56.0" text="Last Name:" textFill="#31572c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_lastName" layoutX="86.0" layoutY="52.0" prefHeight="25.0" prefWidth="108.0" promptText="last name" />
+            <Label layoutX="14.0" layoutY="96.0" text="ID:" textFill="#31572c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_id" layoutX="86.0" layoutY="92.0" prefHeight="25.0" prefWidth="108.0" promptText="id" />
+            <Label layoutX="14.0" layoutY="136.0" text="Role:" textFill="#31572c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_role" layoutX="86.0" layoutY="132.0" prefHeight="25.0" prefWidth="108.0" promptText="role" />
+            <Label layoutX="240.0" layoutY="18.0" text="Hourly Wage:" textFill="#31572c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_hourlyWage" layoutX="322.0" layoutY="14.0" prefHeight="25.0" prefWidth="82.0" promptText="hourly wage" />
+            <Label fx:id="lbl_wrongDetail" layoutX="140.0" layoutY="194.0" prefHeight="17.0" prefWidth="166.0" textFill="RED" />
+            <BorderPane layoutX="216.0" layoutY="52.0" prefHeight="128.0" prefWidth="216.0" style="-fx-background-color: #90A955;">
+               <center>
+                  <AnchorPane prefHeight="143.0" prefWidth="210.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="14.0" layoutY="50.0" text="Username:" textFill="#31572c">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tf_newUsername" layoutX="86.0" layoutY="46.0" prefHeight="25.0" prefWidth="108.0" promptText="username" />
+                        <Label layoutX="14.0" layoutY="88.0" text="Password:" textFill="#31572c">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="72.0" layoutY="14.0" text="Initial User" textFill="#31572c">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="tf_newPassword" layoutX="86.0" layoutY="84.0" prefHeight="25.0" prefWidth="108.0" promptText="password" />
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+            <Button fx:id="btn_cancelAddEmployee" layoutX="19.0" layoutY="236.0" mnemonicParsing="false" onAction="#action_cancelAddEmployee" style="-fx-background-color: #90A955;" text="Cancel" textFill="#31572c" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

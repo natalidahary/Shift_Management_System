@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="666.0" style="-fx-background-color: #bfc882;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <top>
+      <Label alignment="CENTER" prefHeight="47.0" prefWidth="205.0" text="Shift Scheduling" textFill="#31572c" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane prefHeight="218.0" prefWidth="666.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn_send" layoutX="610.0" layoutY="199.0" mnemonicParsing="false" onAction="#action_send" style="-fx-background-color: #90A955;" text="Send" textFill="#31572c" />
+            <Button fx:id="btn_back" layoutX="10.0" layoutY="200.0" mnemonicParsing="false" onAction="#action_back" style="-fx-background-color: #90A955;" text="Back" textFill="#31572c" />
+            <Label layoutX="38.0" layoutY="17.0" text="Sunday" textFill="#31572c">
+               <font>
+                  <Font name="Marlett" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="129.0" layoutY="17.0" text="Monday" textFill="#31572c">
+               <font>
+                  <Font name="Marlett" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="211.0" layoutY="17.0" text="Tuesday" textFill="#31572c">
+               <font>
+                  <Font name="Marlett" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="289.0" layoutY="17.0" text="Wednesday" textFill="#31572c">
+               <font>
+                  <Font name="Marlett" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="383.0" layoutY="17.0" text="Thursday" textFill="#31572c">
+               <font>
+                  <Font name="Marlett" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="489.0" layoutY="17.0" text="Friday" textFill="#31572c">
+               <font>
+                  <Font name="Marlett" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="575.0" layoutY="17.0" text="Saturday" textFill="#31572c">
+               <font>
+                  <Font name="Marlett" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="1.0" prefHeight="13.0" prefWidth="623.0" text="---------------------------------------------------------------------------------------------------------------------------------" textFill="#31572c">
+               <font>
+                  <Font name="Marlett" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="-122.0" layoutY="228.0" prefHeight="13.0" prefWidth="453.0" rotate="90.0" text="----------------------" textFill="#31572c">
+               <font>
+                  <Font name="Marlett" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="-32.0" layoutY="228.0" prefHeight="13.0" prefWidth="453.0" rotate="90.0" text="----------------------" textFill="#31572c">
+               <font>
+                  <Font name="Marlett" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="228.0" prefHeight="13.0" prefWidth="453.0" rotate="90.0" text="----------------------" textFill="#31572c">
+               <font>
+                  <Font name="Marlett" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="253.0" layoutY="118.0" prefHeight="13.0" prefWidth="232.0" rotate="90.0" text="----------------------" textFill="#31572c">
+               <font>
+                  <Font name="Marlett" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="344.0" layoutY="118.0" prefHeight="13.0" prefWidth="232.0" rotate="90.0" text="----------------------" textFill="#31572c">
+               <font>
+                  <Font name="Marlett" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="446.0" layoutY="110.0" prefHeight="13.0" prefWidth="216.0" rotate="90.0" text="----------------------" textFill="#31572c">
+               <font>
+                  <Font name="Marlett" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_date1" layoutX="32.0" layoutY="43.0" text="1" textAlignment="CENTER" textFill="#31572c">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_date2" layoutX="124.0" layoutY="43.0" text="2" textAlignment="CENTER" textFill="#31572c">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_date3" layoutX="209.0" layoutY="43.0" text="3" textAlignment="CENTER" textFill="#31572c">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_date4" layoutX="296.0" layoutY="43.0" text="4" textAlignment="CENTER" textFill="#31572c">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_date5" layoutX="387.0" layoutY="43.0" text="5" textAlignment="CENTER" textFill="#31572c">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_date6" layoutX="481.0" layoutY="43.0" text="6" textAlignment="CENTER" textFill="#31572c">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_date7" layoutX="572.0" layoutY="43.0" text="7" textAlignment="CENTER" textFill="#31572c">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_day1" blendMode="COLOR_BURN" layoutX="20.0" layoutY="39.0" mnemonicParsing="false" onAction="#action_day1" prefHeight="19.0" prefWidth="75.0" />
+            <Button fx:id="btn_day2" blendMode="COLOR_BURN" layoutX="112.0" layoutY="39.0" mnemonicParsing="false" onAction="#action_day2" prefHeight="19.0" prefWidth="75.0" />
+            <Button fx:id="btn_day3" blendMode="COLOR_BURN" layoutX="197.0" layoutY="39.0" mnemonicParsing="false" onAction="#action_day3" prefHeight="19.0" prefWidth="75.0" />
+            <Button fx:id="btn_day4" blendMode="COLOR_BURN" layoutX="285.0" layoutY="39.0" mnemonicParsing="false" onAction="#action_day4" prefHeight="19.0" prefWidth="75.0" />
+            <Button fx:id="btn_day5" blendMode="COLOR_BURN" layoutX="376.0" layoutY="39.0" mnemonicParsing="false" onAction="#action_day5" prefHeight="19.0" prefWidth="75.0" />
+            <Button fx:id="btn_day6" blendMode="COLOR_BURN" layoutX="469.0" layoutY="38.0" mnemonicParsing="false" onAction="#action_day6" prefHeight="19.0" prefWidth="75.0" />
+            <Button fx:id="btn_day7" blendMode="COLOR_BURN" layoutX="561.0" layoutY="39.0" mnemonicParsing="false" onAction="#action_day7" prefHeight="19.0" prefWidth="75.0" />
+            <Label fx:id="lbl_vi1" layoutX="55.0" layoutY="74.0" textFill="#4efa1f" />
+            <Label fx:id="lbl_vi2" layoutX="147.0" layoutY="74.0" textFill="#4efa1f" />
+            <Label fx:id="lbl_vi3" layoutX="232.0" layoutY="74.0" textFill="#4efa1f" />
+            <Label fx:id="lbl_vi4" layoutX="319.0" layoutY="74.0" textFill="#4efa1f" />
+            <Label fx:id="lbl_vi5" layoutX="409.0" layoutY="74.0" textFill="#4efa1f" />
+            <Label fx:id="lbl_vi6" layoutX="504.0" layoutY="74.0" textFill="#4efa1f" />
+            <Label fx:id="lbl_vi7" layoutX="595.0" layoutY="74.0" textFill="#4efa1f" />
+            <Label layoutX="28.0" layoutY="27.0" prefHeight="13.0" prefWidth="623.0" text="---------------------------------------------------------------------------------------------------------------------------------" textFill="#31572c">
+               <font>
+                  <Font name="Marlett" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
